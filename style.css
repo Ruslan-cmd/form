@@ -1,0 +1,104 @@
+body{
+	background-color:#D3D3D3;
+	
+}
+.white-block{
+	border: 1px solid #D3D3D3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10%;
+	width:700px;
+	height:1300px;
+	background-color:white;
+	border-radius: 3%;
+}
+.form-block{
+	//border: 1px solid black;
+	width:500px;
+	height:700px;
+	 margin-left: auto;
+    margin-right: auto;
+	margin-top:100px;
+	color:#696969;
+}
+.form-block h1{
+	text-transform:uppercase;
+	font-family:Courier, monospace;
+	font-size:50px;
+	
+}
+.first-field{
+	margin-top: 20px;
+}
+.first-field label {
+	text-transform:uppercase;
+	font-size:20px;
+
+}
+.first-field input{
+	border: 1px solid #D3D3D3;
+	margin-top:15px;
+	width:99%;
+	height:60px;
+	font-size:30px;
+}
+.password{
+	margin-top:30px;
+	 
+}
+.password label {
+	text-transform:uppercase;
+	font-size:20px;
+
+}
+.password input{
+    position:relative;
+	border: 1px solid #D3D3D3;
+	margin-top:15px;
+	width:99%;
+	height:60px;
+	font-size:30px;
+	
+}
+.password-control {
+
+	display: inline-block;
+	position:absolute;
+	width: 40px;
+	height: 40px;
+	background: url(view.svg) no-repeat;
+	background-position: center;
+	background-size:100%;
+	margin-top:-53px;
+	margin-left:450px;
+	
+}
+.text-under-field{
+	margin-top:15px;
+	width:100%;
+	font-size:20px;
+}
+.text-under-field{
+	 display: flex;
+	 flex-direction: row;
+	 justify-content:space-between;
+}
+.forgot-password{
+	text-decoration:none;
+	color:#696969;
+}
+.button{
+	margin-top:60px;
+	height:70px;
+	width:200px;
+	border-radius:40px;
+	background-color:black;
+	opacity: .8;
+	color:white;
+	font-family:Verdana, sans-serif;
+	font-size:25px;
+}
+.error{
+	color:red;
+	font-size:15px;
+}
