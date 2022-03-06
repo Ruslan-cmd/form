@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 //валидирую ИМЯ и ЭМАИЛ
-if (!preg_match("/^[A-Za-z]{1,20}/i", $name)) {
+if (!preg_match("/^[A-Za-z]{1,20}$/i", $name)) {
      echo "Введите корректное имя (Должно состоять только из букв, без специальных символов и цифр)";
 $name = NULL;
 }
@@ -42,29 +42,6 @@ if (!$email==NULL && !$name==NULL){
       }
   }
 }
-
-/*function getName()
-{
-    if (isset($_COOKIE['name'])) {
-        return $_COOKIE['name'];
-    } elseif (isset($_POST['name'])) {
-        setcookie('name', $_POST['name']);
-        return $_POST['name'];
-    }
-}
-function getEmail()
-{
-    if (isset($_COOKIE['email'])) {
-        return $_COOKIE['email'];
-    } elseif (isset($_POST['email'])) {
-        setcookie('email', $_POST['email']);
-        return $_POST['email'];
-    }
-}
-$email = getEmail();
-$name = getName();
-*/
-
 ?>
 
 <!DOCTYPE html>
