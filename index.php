@@ -19,6 +19,8 @@ if (!$email==NULL && !$name==NULL){
     // получаю остальные данные
     $date = $_POST['date'];
     $contact = $_POST['contact'];
+    setcookie('date', $date);
+    setcookie('contact', $contact);
     $topic = $_POST['topic'];
     $information = $_POST['information'];
     $rule = $_POST['rules'];
@@ -76,7 +78,9 @@ if (!$email==NULL && !$name==NULL){
             </section>
             <section class='first-field'><label>Дата рождения
                     <br>
-                    <input type='date' name="date" required autocomplete="date">
+                    <input type='date' name="date" required autocomplete="date" value="<?php if (isset($_COOKIE['date'])) {
+                        echo $_COOKIE['date'];
+                    }  ?>">
                 </label>
             </section>
             <section class="radio">
